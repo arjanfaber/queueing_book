@@ -670,8 +670,10 @@ If there are fewer patients of some group, then the capacity can be planned/give
 \begin{solution} Queue A can use all capacity, except what is
  reserved for queue B:
 \begin{equation*}
- d_{k,A} = \min\{L_{A, k-1}, c_k - r_B\}.
+ d_{k,A} = \min\{L_{k-1, A}, c_k - r_B\}.
 \end{equation*}
+
+
 Observe that, since $c_k \geq r_A + r_B$, this rule ensures that queue
 A receives at least its reserved capacity $r_A$.
 
